@@ -81,7 +81,7 @@ h4{
 .bt-c{
     background-color: rgb(63, 133, 109);
     border: none;
-    width: 235px;
+    width: 100%;
     height: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(10, 58, 50); 
@@ -91,7 +91,11 @@ h4{
 }
 
 .inp-txt{
-    width: 235px;
+    width: 100%;
     height: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
 }

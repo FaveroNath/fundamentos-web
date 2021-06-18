@@ -23,15 +23,16 @@
         <div>
             <form>
                 
-                <input class="inp-txt" type="text" id="nome" placeholder="Nome">
-                <br><br>
-                <input class="inp-txt" type="text" id="email" placeholder="Email">
+                <input class="inp-txt" type="text" id="nome" placeholder="Nome" onkeyup="validaNome()">
+                <div class="pt-5" id="txtAlerta"></div>
                 <br>
+                <input class="inp-txt" type="email" id="email" placeholder="Email" onkeyup="validaEmail()">
+                <div class="pt-5" id="txtAlertaEmail"></div>
                 <br>
-                <textarea  name="assunto" id="assunto" cols="30" rows="10" placeholder="Assunto"></textarea>
+                <textarea class="inp-txt"  name="assunto" id="assunto" cols="30" rows="10" placeholder="Assunto" onkeyup="validaAssunto()"></textarea>
+                <div class="pt-5" id="txtAlertaAssunto"></div>
                 <br>
-                <br>
-                <button class="bt-c">Enviar</button>
+                <button class="bt-c" onclick="enviar()">Enviar</button>
             </form>
         </div>
        <div class="ml-50">
@@ -39,7 +40,7 @@
             <h2> Endereço:</h2>
             <p>Av. Paulista, 345</p>
             <p>São Paulo - SP</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.976219026187!2d-46.64959358552202!3d-23.569297567769357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59be8a6e5ba5%3A0x575afe535a8446c9!2sAv.%20Paulista%2C%20345%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-000!5e0!3m2!1spt-BR!2sbr!4v1623855533626!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.976219026187!2d-46.64959358552202!3d-23.569297567769357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59be8a6e5ba5%3A0x575afe535a8446c9!2sAv.%20Paulista%2C%20345%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-000!5e0!3m2!1spt-BR!2sbr!4v1623855533626!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout ="mapaNormal()"></iframe>
             
        </div>
     </div>
@@ -56,5 +57,6 @@
             </a>
           </div>  
       </footer>
+      <script src="assets/scripts/contact.js"></script>
 </body>
 </html>
