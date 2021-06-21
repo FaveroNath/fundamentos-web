@@ -59,6 +59,7 @@ function enviar(){
 function mapaZoom(){
     map.style.width = "800px"
     map.style.height = "600px"
+    map.style.transitionDuration="1s"
 }
 
 function mapaNormal(){

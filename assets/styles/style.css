@@ -1,18 +1,25 @@
-/*retira a mergem de toda página*/
-*{
-    margin: 0;      
-   
+.bg-azul{
+    background-color: #0D1821;
+}
+.bg-verde{
+    background-color: #3F856D;
 }
 .center{
    text-align: center;
 }
 .ff{
     font-family: 'Caveat', cursive;
-    color: rgb(10, 58, 50);
+    color: #E6DFCE;
 }
 /*Mudando a cor*/
 .menu{
     background-color: rgb(63, 133, 109);
+}
+
+.color-txt{
+    font-size: 14px;
+    color: #E6DFCE;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .fs{
@@ -20,8 +27,9 @@
 }
 
 h4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(10, 58, 50);
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color:#E6DFCE;
 }
 .justify{
     text-align: justify;
@@ -36,15 +44,18 @@ h4{
 .menu li{
     display: inline;
     padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(63, 133, 109);
 }
 .menu li a{
     text-decoration: none;
-    color:  rgb(10, 58, 50);
+    color: #E6DFCE;
+    background-color: rgb(63, 133, 109);
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .menu li a:hover{
-    color: rgb(241, 227, 144);
+   color: #F46036;
 }
 
 .p-30{
@@ -72,6 +83,7 @@ h4{
 .mb-50 {
     margin-bottom: 50px;
 }
+
 /*Style contato*/
 
 .ml-50{
@@ -98,4 +110,5 @@ h4{
     border-left: none;
     border-right: none;
     outline: none;
+    color: #E6DFCE;
 }

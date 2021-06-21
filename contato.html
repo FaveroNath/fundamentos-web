@@ -7,17 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Contato</title>
 </head>
-<body>
-    <ul class="menu p-30">
+<body class="bg-azul">
+   <!-- <ul class="menu p-30">
         <li>
         <a href="index.html"> Home </a>
         </li>
         <li>
             <a href="contato.html">Contato</a>
         </li>
-    </ul>
+    </ul>-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-verde">
+            <a class="navbar-brand" href="#">Meu Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
     <h1 class="center ff fs p-30">Entre em contato comigo!</h1>
     <div class="container mb-50">
         <div>
@@ -25,38 +44,45 @@
                 
                 <input class="inp-txt" type="text" id="nome" placeholder="Nome" onkeyup="validaNome()">
                 <div class="pt-5" id="txtAlerta"></div>
-                <br>
+            
                 <input class="inp-txt" type="email" id="email" placeholder="Email" onkeyup="validaEmail()">
                 <div class="pt-5" id="txtAlertaEmail"></div>
-                <br>
+                
                 <textarea class="inp-txt"  name="assunto" id="assunto" cols="30" rows="10" placeholder="Assunto" onkeyup="validaAssunto()"></textarea>
                 <div class="pt-5" id="txtAlertaAssunto"></div>
-                <br>
-                <button class="bt-c" onclick="enviar()">Enviar</button>
+               
+                <input class="btn btn-lg btn-block bg-verde" type="submit" value="Submit" onclick="enviar()">
             </form>
         </div>
        <div class="ml-50">
       
-            <h2> Endereço:</h2>
-            <p>Av. Paulista, 345</p>
-            <p>São Paulo - SP</p>
+            <h2 class="color-txt pb-0"> Endereço:</h2>
+            <p class="color-txt pb-0">Av. Paulista, 345</p>
+            <p class="color-txt pb-0">São Paulo - SP</p>
             <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.976219026187!2d-46.64959358552202!3d-23.569297567769357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59be8a6e5ba5%3A0x575afe535a8446c9!2sAv.%20Paulista%2C%20345%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-000!5e0!3m2!1spt-BR!2sbr!4v1623855533626!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout ="mapaNormal()"></iframe>
             
        </div>
     </div>
     <hr>
-    <footer class="pt-5">  
-        <p class="center">Todos os direitos reservados: Nathalia F. Amorim &copy</p>  
-        <div class="container">
-            <a href="https://github.com/FaveroNath" target="_blank">
-                <img class ="tm-social p-30" src="assets/img/git.png" alt="github">
-            </a>
-            <a href="www.linkedin.com/in/nathaliafaveroamorim
-            " target="_blank">
-                <img class ="tm-social p-30" src="assets/img/linkdin.png" alt="linkdin"> 
-            </a>
-          </div>  
+    <footer class="pt-3">  
+        <p class="center color-txt">Todos os direitos reservados: Nathalia F. Amorim &copy</p> 
+          <div class="container text-secondary">
+          <a class="text-secondary" href="https://github.com/FaveroNath" target="_blank">
+              <img class ="tm-social mb-3 mr-3" src="assets/img/git.png" alt="github">
+          </a>
+          <a href="www.linkedin.com/in/nathaliafaveroamorim
+          " target="_blank">
+              <img class ="tm-social ml-3 mb-3" src="assets/img/linkdin.png" alt="linkdin"> 
+          </a>
+        </div>   
+      </footer>
+      </footer>
+
       </footer>
       <script src="assets/scripts/contact.js"></script>
+      <script src="assets/scripts/index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
